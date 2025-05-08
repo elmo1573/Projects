@@ -1,8 +1,8 @@
-name	previous_gpa	current_gpa
-Ali	3.5	2
-Bilal	2.9	1.2
-Ahmad	4	4
-salman	4	4
-bob	3.6	3.8
-bobo	3.5	3.76
-ahmad	3.6	3
+name,previous_gpa,current_gpa
+Ali,3.5,2.0
+Bilal,2.9,1.2
+Ahmad,4.0,4.0
+salman,4.0,4.0
+bob,3.6,3.8
+bobo,3.5,3.76
+ahmad,3.6,3.0

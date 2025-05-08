@@ -1,0 +1,89 @@
+@startuml MyFitnessApp
+
+class DailyRoutine {
+  LegsExercise
+  ChestExercise
+  Arms
+  ShoulderBack
+  Abs
+
+  +showRoutine()
+}
+
+class MonthlyProgress {
+  - weight_day1: double
+  - weight_day7: double
+  - waist_day1: double
+  - waist_day7: double
+  +MonthlyProgress(w1: double, w7: double, wd1: double, wd7: double)
+  +report(): string
+}
+
+class wisewords {
+  -quotation: char[200]
+  -a: int
+  -i: int
+  +wisewords()
+}
+
+class BMI {
+  -height: double
+  -weight: double
+  -bmi: double
+  +set(h: double, w: double)
+  +calcBMI()
+  +getBMI(): double
+}
+
+class Nutrition {
+  +showdailydiet()
+}
+
+class Trainer {
+  -name: string
+  -age: int
+  -gender: char
+  -experience: int
+  -rate: string
+  +Trainer(name: string, age: int, gender: char, exp: int, rate: string)
+  +getName(): string
+  // Other accessor methods
+}
+
+class main {
+  -name: string
+  -age: int
+  -weight: double
+  -h: double
+  -waist: double
+  -gender: char
+  -height: double
+  -opt: int
+  -choice: char
+  -needTrainer: bool
+  -choi: int
+  -T: Trainer
+  -T1: Trainer
+  -T2: Trainer
+  -T3: Trainer
+  -rate: string
+  +main()
+}
+
+DailyRoutine --|> LegsExercise
+DailyRoutine --|> ChestExercise
+DailyRoutine --|> Arms
+DailyRoutine --|> ShoulderBack
+DailyRoutine --|> Abs
+
+main --|> Trainer
+main --|> DailyRoutine
+main --|> MonthlyProgress
+main --|> Nutrition
+
+MonthlyProgress -- BMI
+MonthlyProgress --|> DailyRoutine
+
+wisewords --|> main
+
+@enduml

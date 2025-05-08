@@ -1,0 +1,5 @@
+
+We are creating a gym application which will prompt and ask the user what exactly is it that they're looking for  in the main screen (ie nutrition plan or workout plan). 
+Once the user selects their desired option either a nutrition plan will be displayed based on their BMI or a screen asking which muscle groups workout are they looking for which further has 3 categories advanced , beginner and intermediate. 
+Whichever one the user selects will be displayed. The user can also obtain a 7 day workout plan and also look up trainer information and their charges. 
+The user will also be asked to rate the application and track their monthly progress based on their weight and their waist size.
